@@ -108,11 +108,4 @@ Behavior notes:
 
 This repository has no explicit license file. If you intend to share or distribute this project, add a LICENSE file describing the terms.
 
----
 
-If you'd like, I can also:
-- Add a sample `.env.example` file,
-- Create basic unit tests for the API wrappers,
-- Or convert the interactive prompt into a small CLI with flags for username/password and output formatting.
-
-Tell me which of those you'd like next and I will implement it.
