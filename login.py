@@ -1,4 +1,5 @@
 import requests
+import getpass
 
 login_url = "https://mobile.oneuni.com.vn/AUTH/connect/token?"
 def login(username, password):
@@ -11,23 +12,21 @@ def login(username, password):
         "client_id": "mobile_flutter",
         "scope": "offline_access openid"
     }
-
     headers = {
         "accept": "application/json",
         "user-agent": "Dart/3.0 (dart:io)"
 
     }
-
     response = requests.post(login_url, data=payload, headers=headers)
     response.raise_for_status()
-
     data = response.json()
     return data["access_token"]
 
 # if __name__ == "__main__":
 #     username = input("Username: ")
-#     password = input("Password: ")
+#     password = getpass.getpass("Password: ")
 
 #     token = login(username, password)
 #     print(token)
+
 
